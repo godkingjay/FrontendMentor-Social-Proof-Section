@@ -315,16 +315,16 @@ footer {
 }
 
 @media (min-width: 955px) {
-  .rating-card {
-    margin-left: auto;
-  }
-
   .rating-card:nth-child(1){
-    margin-right: 96px;
+    margin-right: auto;
   }
 
   .rating-card:nth-child(2){
-    margin-right: 48px;
+    margin-inline: auto;
+  }
+
+  .rating-card:nth-child(3){
+    margin-left: auto;
   }
 
   .feedback-card:nth-child(1){
