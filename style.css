@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'League Spartan';
+  src: url('fonts/LeagueSpartan-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'League Spartan Bold';
+  src: url('fonts/LeagueSpartan-SemiBold.ttf');
+}
+
 *, *:before, *:after {
   box-sizing: border-box;
   margin: 0;
@@ -5,11 +15,16 @@
   outline: solid 1px black;
 }
 
+h1 {
+  font-family: 'League Spartan Bold';
+}
+
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   position: relative;
+  font-family: 'League Spartan';
 }
 
 main {
@@ -44,11 +59,14 @@ main {
 .content {
   margin: 32px;
   display: grid;
-  height: 100%;
+  flex: 1;
   grid-auto-columns: 1fr;
+  grid-auto-rows: max-content;
   grid-template-areas: 
           "h r"
           "f f";
+  grid-gap: 36px;
+  place-items: center;
 }
 
 footer {
