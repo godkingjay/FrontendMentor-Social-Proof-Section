@@ -146,6 +146,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+  main {
+    margin-block: 48px;
+  }
+  
   .content {
     grid-template-areas: 
         "h"
