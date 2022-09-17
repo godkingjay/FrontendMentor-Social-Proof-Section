@@ -101,6 +101,7 @@ section {
   grid-template-areas: 
       "c1 c2 c3";
   grid-gap: 24px;
+  place-items: center;
 }
 
 .feedback-card {
@@ -136,12 +137,27 @@ footer {
   color: hsl(228, 45%, 44%);
 }
 
+@media (max-width: 1080px) {
+  .feedback-ctn {
+    grid-template-areas: 
+        "c1 c2"
+        "c3 c2";
+  }
+}
+
 @media (max-width: 768px) {
   .content {
     grid-template-areas: 
         "h"
         "r"
         "f";
+  }
+
+  .feedback-ctn {
+    grid-template-areas: 
+        "c1"
+        "c2"
+        "c3";
   }
 }
 
