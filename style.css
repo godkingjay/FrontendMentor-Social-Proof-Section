@@ -13,14 +13,20 @@ body {
 }
 
 main {
-  position: absolute;
-  inset: 32px;
+  display: flex;
+  flex: 1;
+  height: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+  flex-direction: column;
 }
 
 .wrapper {
+  display: flex;
+  flex: 1;
   height: 100%;
   padding: 32px;
-  position: relative;
+  flex-direction: column;
 }
 
 #header {
@@ -36,6 +42,7 @@ main {
 }
 
 .content {
+  margin: 32px;
   display: grid;
   height: 100%;
   grid-auto-columns: 1fr;
@@ -57,4 +64,16 @@ footer {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 768px) {
+  
+}
+
+@media (min-width: 769px) {
+  body {
+    background-image: url('images/bg-pattern-top-desktop.svg'), url('images/bg-pattern-bottom-desktop.svg');
+    background-size: cover, cover;
+    background-position: top, bottom;
+  }
 }
