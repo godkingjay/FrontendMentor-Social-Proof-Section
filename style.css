@@ -1,3 +1,12 @@
+:root {
+  --clr-main: hsl(300, 43%, 22%);
+  --clr-secondary: hsl(303, 10%, 53%);
+  --clr-tertiary: hsl(300, 25%, 90%);
+  --clr-rating-person: hsl(0, 0%, 100%);
+  --clr-rating-type: hsl(333, 80%, 67%);
+  --clr-rating-txt: hsl(300, 24%, 96%);
+}
+
 @font-face {
   font-family: 'League Spartan';
   src: url('fonts/LeagueSpartan-Regular.ttf');
@@ -17,6 +26,11 @@
 
 h1 {
   font-family: 'League Spartan Bold';
+}
+
+p {
+  font-size: 18px;
+  line-height: 24px;
 }
 
 body {
@@ -76,6 +90,7 @@ section {
   display: flex;
   flex-direction: column;
   margin: 24px;
+  margin-bottom: 0;
   gap: 24px;
 }
 
@@ -86,12 +101,47 @@ section {
 .header-title {
   font-size: 48px;
   line-height: 44px;
+  color: var(--clr-main);
+}
+
+.header-description {
+  color: var(--clr-secondary);
 }
 
 .rating-ctn {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  align-items: center;
+}
+
+.rating-card {
+  display: flex;
+  background: var(--clr-tertiary);
+  padding: 16px;
+  border-radius: 4px;
+  box-shadow: -4px 4px 3px #00000014;
+  width: 100%;
+  max-width: 378px;
+  transition: all 0.2s ease-in-out;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+.rating-card:hover {
+  transform: scale(1.05);
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rating-text {
+  width: 100%;
 }
 
 .feedback-ctn {
@@ -105,9 +155,20 @@ section {
 }
 
 .feedback-card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
   width: 100%;
   max-width: 378px;
   padding: 24px;
+  background: var(--clr-main);
+  border-radius: 8px;
+  box-shadow: -8px 8px 6px #0004;
+  transition: all 0.2s ease-in-out;
+}
+
+.feedback-card:hover {
+  transform: scale(1.05);
 }
 
 .feedback-card:nth-child(1){
@@ -120,6 +181,39 @@ section {
 
 .feedback-card:nth-child(3){
   grid-area: c3;
+}
+
+.feedback-profile {
+  display: flex;
+  height: 48px;
+  align-items: center;
+  gap: 18px;
+}
+
+.feedback-profile > img {
+  height: 100%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.feedback-person {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.feedback-name {
+  color: var(--clr-rating-person);
+  margin-bottom: auto;
+}
+
+.feedback-type {
+  color: var(--clr-rating-type);
+  margin-top: auto;
+}
+
+.feedback-text {
+  color: var(--clr-rating-txt);
 }
 
 footer {
@@ -155,6 +249,16 @@ footer {
         "h"
         "r"
         "f";
+  }
+
+  .header-ctn {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .rating-ctn {
+    margin-block: 24px;
   }
 
   .feedback-ctn {
