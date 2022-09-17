@@ -65,8 +65,46 @@ main {
   grid-template-areas: 
           "h r"
           "f f";
-  grid-gap: 36px;
+  grid-gap: 24px;
   place-items: center;
+}
+
+section {
+  width: 100%;
+}
+
+.header-ctn {
+  display: flex;
+  flex-direction: column;
+  margin: 24px;
+  gap: 24px;
+}
+
+.header-ctn > * {
+  max-width: 402px;
+}
+
+.header-title {
+  font-size: 48px;
+  line-height: 44px;
+}
+
+.rating-ctn {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.feedback-ctn {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 24px;
+}
+
+.feedback-card {
+  width: 100%;
+  max-width: 378px;
+  padding: 24px;
 }
 
 footer {
