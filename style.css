@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  outline: solid 1px black;
 }
 
 body {
@@ -9,6 +10,38 @@ body {
   flex-direction: column;
   min-height: 100vh;
   position: relative;
+}
+
+main {
+  position: absolute;
+  inset: 32px;
+}
+
+.wrapper {
+  height: 100%;
+  padding: 32px;
+  position: relative;
+}
+
+#header {
+  grid-area: h;
+}
+
+#rating {
+  grid-area: r;
+}
+
+#feedback {
+  grid-area: f;
+}
+
+.content {
+  display: grid;
+  height: 100%;
+  grid-auto-columns: 1fr;
+  grid-template-areas: 
+          "h r"
+          "f f";
 }
 
 footer {
@@ -19,6 +52,7 @@ footer {
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin: 4px;
 }
 
 .attribution a {
