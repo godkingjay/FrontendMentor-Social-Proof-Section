@@ -17,7 +17,9 @@
   src: url('fonts/LeagueSpartan-SemiBold.ttf');
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -79,9 +81,9 @@ main {
   flex: 1;
   grid-auto-columns: 1fr;
   grid-auto-rows: max-content;
-  grid-template-areas: 
-      "h r"
-      "f f";
+  grid-template-areas:
+    "h r"
+    "f f";
   grid-gap: 24px;
   place-items: center;
 }
@@ -98,7 +100,7 @@ section {
   gap: 24px;
 }
 
-.header-ctn > * {
+.header-ctn>* {
   max-width: 402px;
 }
 
@@ -155,8 +157,8 @@ section {
   display: grid;
   grid-auto-columns: 1fr;
   grid-auto-rows: 1fr;
-  grid-template-areas: 
-      "c1 c2 c3";
+  grid-template-areas:
+    "c1 c2 c3";
   grid-gap: 24px;
   place-items: center;
 }
@@ -178,15 +180,15 @@ section {
   transform: scale(1.05);
 }
 
-.feedback-card:nth-child(1){
+.feedback-card:nth-child(1) {
   grid-area: c1;
 }
 
-.feedback-card:nth-child(2){
+.feedback-card:nth-child(2) {
   grid-area: c2;
 }
 
-.feedback-card:nth-child(3){
+.feedback-card:nth-child(3) {
   grid-area: c3;
 }
 
@@ -197,7 +199,7 @@ section {
   gap: 18px;
 }
 
-.feedback-profile > img {
+.feedback-profile>img {
   height: 100%;
   aspect-ratio: 1;
   border-radius: 50%;
@@ -240,9 +242,9 @@ footer {
 
 @media (max-width: 1080px) {
   .feedback-ctn {
-    grid-template-areas: 
-        "c1 c2"
-        "c3 c2";
+    grid-template-areas:
+      "c1 c2"
+      "c3 c2";
   }
 }
 
@@ -272,12 +274,12 @@ footer {
   main {
     margin-block: 48px;
   }
-  
+
   .content {
-    grid-template-areas: 
-        "h"
-        "r"
-        "f";
+    grid-template-areas:
+      "h"
+      "r"
+      "f";
   }
 
   .header-ctn {
@@ -291,10 +293,10 @@ footer {
   }
 
   .feedback-ctn {
-    grid-template-areas: 
-        "c1"
-        "c2"
-        "c3";
+    grid-template-areas:
+      "c1"
+      "c2"
+      "c3";
   }
 }
 
@@ -315,23 +317,23 @@ footer {
 }
 
 @media (min-width: 955px) {
-  .rating-card:nth-child(1){
+  .rating-card:nth-child(1) {
     margin-right: auto;
   }
 
-  .rating-card:nth-child(2){
+  .rating-card:nth-child(2) {
     margin-inline: auto;
   }
 
-  .rating-card:nth-child(3){
+  .rating-card:nth-child(3) {
     margin-left: auto;
   }
 
-  .feedback-card:nth-child(1){
+  .feedback-card:nth-child(1) {
     margin-bottom: auto;
   }
 
-  .feedback-card:nth-child(3){
+  .feedback-card:nth-child(3) {
     margin-top: auto;
   }
 }
