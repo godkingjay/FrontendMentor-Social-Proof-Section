@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: ---> [LINK]()
+- Solution URL: ---> [LINK](https://www.frontendmentor.io/solutions/social-proof-section-responsive-html-css-iLAOCIdM0G)
 - Live Site URL: ---> [LINK](https://godkingjay.github.io/FrontendMentor-Social-Proof-Section/)
 
 ## My process
